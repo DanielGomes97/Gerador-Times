@@ -9,7 +9,7 @@ para formar dois times equilibrados.
 - Sorteio de Mapas: Além dos times, o aplicativo também sorteia três mapas aleatórios para serem jogados durante a competição.
 
 ## Como Usar
-1. Baixe o aplicativo compilado em: [Clique aqui e baixe](https://mega.nz/file/GbJRHKQZ#R2TjsESEorNR8jCDtJa7dE1zmPPsJMVQ3fr7tymimKA){:target="_blank"} 
+1. Baixe o aplicativo compilado em: [Clique aqui e baixe](https://mega.nz/file/GbJRHKQZ#R2TjsESEorNR8jCDtJa7dE1zmPPsJMVQ3fr7tymimKA)
 2. Extraia e execute o aplicativo
 3. Mova participantes para sala de espera no servidor da DarkSouLsCFAL e clique em **Localizar jogadores no TS3**.
 4. Verifique se os nomes estão corretos e pressione o botão "Sortear Times" para formar os times.
