@@ -1,0 +1,435 @@
+object FrmResultado: TFrmResultado
+  Left = 0
+  Top = 0
+  Caption = #187#208#227'rk'#8226#167#248#252'Ls'#8482' | Gerador de Time'
+  ClientHeight = 720
+  ClientWidth = 480
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 480.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Contents
+      Cursor = crHandPoint
+      Fill.Color = xFF191921
+      Locked = True
+      HitTest = False
+      Size.Width = 480.000000000000000000
+      Size.Height = 720.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 480.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout5: TLayout
+        Align = Client
+        Size.Width = 360.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label2: TLabel
+          Align = Client
+          StyledSettings = []
+          Margins.Top = 7.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 53.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Roboto'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'GERADOR DE EQUIPES'
+          TabOrder = 3
+        end
+      end
+      object Layout6: TLayout
+        Align = Left
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object BtnVoltar: TRectangle
+          Align = Client
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+            F80000000473424954080808087C08648800000096494441544889ED95210E02
+            3114445B444D0547E06684B020080124DC85BB718531336DD264B7AB160504D1
+            265078EA9BFF9E1C637E0A92CB18E3A28A5CD20EC040F29673F645E524CF9232
+            809EE4EA7BE421841380A196FCF8973F921F4ACBED7448EA524A57E79C7DF5F0
+            2EDE7B6B8C31B37BC9DA7929F953246D01F49232C94BADC8A69948D74C64DD4C
+            645F6D7026AA4EE6C7320223E2F618ABAE96930000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Opacity = 0.800000011920929000
+          Margins.Left = 15.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 15.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnVoltarClick
+          OnMouseEnter = BtnVoltarMouseEnter
+          OnMouseLeave = BtnVoltarMouseLeave
+        end
+      end
+      object Layout7: TLayout
+        Align = Right
+        Position.X = 420.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LblFechar: TLabel
+          Align = Client
+          Cursor = crHandPoint
+          StyledSettings = [Family]
+          HitTest = True
+          Size.Width = 60.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFD7D7D7
+          TextSettings.HorzAlign = Center
+          Text = 'X'
+          Visible = False
+          TabOrder = 0
+          OnClick = LblFecharClick
+        end
+      end
+    end
+    object Layout3: TLayout
+      Align = Client
+      Size.Width = 480.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object LstTimes: TListBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 204.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 240.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 4
+        ShowScrollBars = False
+        Columns = 2
+        DisableFocusEffect = True
+        ItemHeight = 235.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 470.000000000000000000
+        Viewport.Height = 240.000000000000000000
+      end
+      object LblMapa2: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 507.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFFEFEFEF
+        TextSettings.HorzAlign = Center
+        Text = 'Label2'
+        Visible = False
+        TabOrder = 5
+      end
+      object LblMapa1: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 507.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFFEFEFEF
+        TextSettings.HorzAlign = Center
+        Text = 'Label2'
+        Visible = False
+        TabOrder = 2
+      end
+      object LblMapa0: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 507.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFFEFEFEF
+        TextSettings.HorzAlign = Center
+        Text = 'Label2'
+        Visible = False
+        TabOrder = 1
+      end
+      object LstMapas: TListBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 194.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 3
+        ShowScrollBars = False
+        DisableFocusEffect = True
+        ItemHeight = 194.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 470.000000000000000000
+        Viewport.Height = 194.000000000000000000
+      end
+    end
+    object Layout4: TLayout
+      Align = Bottom
+      Margins.Top = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.Y = 560.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 140.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout9: TLayout
+        Align = Top
+        Size.Width = 480.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object BtnCopiaSorteio: TRectangle
+          Align = Client
+          Cursor = crHandPoint
+          Fill.Color = xFF529E5A
+          Opacity = 0.800000011920929000
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 440.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = BtnCopiaSorteioClick
+          OnMouseEnter = BtnCopiaSorteioMouseEnter
+          OnMouseLeave = BtnCopiaSorteioMouseLeave
+          object LblCopiaSorteio: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Locked = True
+            Size.Width = 440.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'COPIAR SORTEIO'
+            TabOrder = 0
+          end
+        end
+      end
+      object Layout8: TLayout
+        Align = Bottom
+        Position.Y = 80.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object BtnSortearNovamente: TRectangle
+          Align = Client
+          Cursor = crHandPoint
+          Fill.Color = xFFAF6D5B
+          Opacity = 0.800000011920929000
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 440.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = BtnSortearNovamenteClick
+          OnMouseEnter = BtnSortearNovamenteMouseEnter
+          OnMouseLeave = BtnSortearNovamenteMouseLeave
+          object Label1: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Locked = True
+            Size.Width = 440.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'SORTEAR NOVAMENTE'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    inline FrameMensagem1: TFrameMensagem
+      Align = Contents
+      Size.Width = 480.000000000000000000
+      Size.Height = 720.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited Rectangle1: TRectangle
+        Size.Height = 720.000000000000000000
+      end
+      inherited Layout1: TLayout
+        inherited RFundoMensagem: TRectangle
+          inherited RBackgroundTopo: TRectangle
+            inherited BtnFechar: TRectangle
+              OnClick = FrameMensagem1BtnFecharClick
+            end
+            inherited Layout3: TLayout
+              inherited ImgConfirmacao: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F80000000473424954080808087C08648800000207494441544889D555CB6A14
+                      41143DB72BA333D3D9C6858260963E36117FC118903008FA078AA02089FA016A
+                      96FE81FE42487682BF20BA4AB250088845C1B8984DD7A91967E8BA6E7A86D1E9
+                      EEC904B2C85975F5BDF79CD3B7ABEA02E71D521754D58BFD7EBFA3AA1B00D600
+                      5C2A42BF017C13914FAD566B4F44860B0B84101EC418DF8BC8B53A1331C66363
+                      CCAB76BBBD57164F4A5C0BC91D55DD2DC80F45643BC67833CFF3953CCF57628C
+                      B744E42580A32449567BBDDE2EC977AA5ADB110000C9B724D539370C213C5755
+                      5395ABAA2684F0C2393724A924DFCC23DFB4D6C66EB7FBC77B7F77AE9B02DEFB
+                      7BCEB9A1B53692BC5FE5E602C91F8593A7150694A456C49E9154EFFD77556DCC
+                      2484101E150407556DA913505543F288A486101E8EDF4F7E728CB1030022F241
+                      44F2D2CFAC8188E422F2B15876660400DC06803CCF3F2F4A3EC654EDDA8C8088
+                      5C0680E5E5E55FA715180C063F8BC72B33025328EDF169311150550700DEFBAB
+                      55C9699A4A9AA69587A9D96C8E6BDD8C0080AF00608C39F1FEFF1FC698F569AE
+                      7F049224D90700557DA2AA4B650473B6E91280C7C572BF2C6172D042085B8B0A
+                      78EF5FD71EB48260D35A1B9D7343EFFD7A695279DD86B576547B554C259FDD65
+                      571409C99D713B481E8410B6B22CBBAEAA4D556D6659762384B04DF290A416CE
+                      4BAFEB331F388B8CCC3BA3D16815001A8DC631802F271999E71F7F01E841A85A
+                      8FDC90C50000000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Attention' +
+                      '_24px.png'
+                  end>
+              end
+              inherited ImgInformacao: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F80000000473424954080808087C0864880000017F494441544889D595B14A03
+                      4118846756A26CFE3457899D28563682BE849551F429046D14F105B41044C4C7
+                      301AB0F021045369A1A095F5557B8B1CEE6FE39DA7975C128988D32DBB33DFC0
+                      DDFE0BFC77B16A5355279C731B245743080BC69808004208B131A6A3AA972272
+                      4EF27568409224EB21842392D37D4A3C1B6376EBF57A6B2080AA8E39E78E496E
+                      550577F19D88C80EC9B74A8073EE0CC0E630E105C869A3D1D8EE0970CE35015C
+                      FE241C00E238D6288A5644E4AA0450D5F12449EE01CCF60A10117E14D15E6754
+                      F55144E649A60060B20DEFFD5A55F8A02239E7BD6F66EB1C10426876B77CCA39
+                      A755ED0B2A03482E0E51B49FF2AC2260B29F4B44987D872AA9EA5409104230DD
+                      8F0F2F92798962E8CBA800C5AC22A03342C06D09608C698F109067E5006B6D4B
+                      551F46107E67ADBD280148A624F7AA9CFDEE411CC70A60BF38F0BEFC3922D206
+                      70F893DA001045D141710E017F31AE33FDDA83F3CD3CE1BD5F55D565004B699A
+                      CE0040AD567B027043F2DA5ADBAE7A32FFBFDE012557AB72E2A920A700000000
+                      49454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Info_24px' +
+                      '.png'
+                  end>
+              end
+              inherited ImgSucesso: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F80000000473424954080808087C08648800000225494441544889D595BD8B13
+                      4118C69F67F271C9CE86B0228882702A672307A2D662617357684EBCCEFF40D0
+                      C2B3103B514F10E410FF051B5112B1B0B8B3B03B10159B6BE4D442AE7421EC64
+                      1293BC63639675936C2E82C83DDDCCFBBCBF6706E603D8EB6256D13937638C59
+                      26B9242227955201008848A894FAE89CAB6BAD9F93EC4C1DD06AB52E8BC84392
+                      B31316F1552975D3F3BC17BB0A70CEE58C318F485ECB028FE85BD35AAF90EC67
+                      0618639E00B83A0D3C11F2D8F7FDEB63038C313500F5BF81034018862E08828B
+                      5AEB574301CEB962ABD5DA02706C4AA80441A0129CCF5AEB1324BB001017ACB5
+                      97A68503D8AE56ABF322B219AF989CB3D6D606E33840446AE9EE2CF5FBFDEF4A
+                      A9F3954A654B297537551E0E20797AB7F05EAFB7532C16CF95CBE56FD6DAB322
+                      F22C658959C980036378CDD438CCE5728BA552693B8AA27911A92BA5BCA4C139
+                      7770284044145272CEBDEDF57A4744E4E5EFA988E4A2EFFB9FDAEDF67192EB00
+                      F6A5FB48C6872709DD19617C53AD567FF8BEBF4CF2A9885CF03C6FD35A3BDBE9
+                      7436008CDB75CCCA27263F00984B19EF4451D425F900C0150030C61C12918D7C
+                      3E7F780C1C00DE0FED4029D518E524B91A45D12D0068369BFB01AC63F2718E59
+                      D35CB47B0016009CCA228FBD68247F0258C9E8BD3D091E86A123796300FF2300
+                      00B4D60D00AB59902C0541703FF90E01FFE3B91EE89F7D38A9E6196BED92736E
+                      01C0996EB77B14000A85C21700EF48BE2E97CB8DAC2F73EFEB17673AF5FC7FDA
+                      46420000000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Ok_24px.p' +
+                      'ng'
+                  end>
+              end
+            end
+          end
+          inherited Layout2: TLayout
+            inherited Layout4: TLayout
+              inherited BtnConfirmar: TRectangle
+                OnClick = FrameMensagem1BtnConfirmarClick
+              end
+              inherited BtnCancelar: TRectangle
+                OnClick = FrameMensagem1BtnCancelarClick
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
