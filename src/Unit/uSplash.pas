@@ -15,6 +15,7 @@ type
     Label1: TLabel;
     procedure Timer1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,12 +34,29 @@ uses uPrincipal, VariaveisGlobais;
 procedure TFrmSplash.FormCreate(Sender: TObject);
 begin
     Timer1.Enabled := True;
-
+    {
     HeightFormulario := Height;
     if Height >= screen.Height then
        HeightFormulario := Round(Screen.Height - 100);
 
-    Height := HeightFormulario;
+    Height := HeightFormulario;  }
+    //OnResize := FormResize;
+end;
+
+procedure TFrmSplash.FormResize(Sender: TObject);
+begin
+    // Ajusta o tamanho do formulário com base na resolução
+    HeightFormulario := Height;
+    if (Height > Screen.Height) then
+    begin
+        Height := Trunc(Screen.Height - 70);
+        HeightFormulario := Height;
+    end
+    else
+    begin
+      //Self.Width := 720;
+      //Self.Height := 480;
+    end;
 end;
 
 procedure TFrmSplash.Timer1Timer(Sender: TObject);
