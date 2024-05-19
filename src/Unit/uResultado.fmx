@@ -117,39 +117,17 @@ object FrmResultado: TFrmResultado
     object Layout3: TLayout
       Align = Client
       Size.Width = 480.000000000000000000
-      Size.Height = 480.000000000000000000
+      Size.Height = 560.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
-      object LstTimes: TListBox
-        Align = Top
-        Margins.Left = 5.000000000000000000
-        Margins.Right = 5.000000000000000000
-        Margins.Bottom = 5.000000000000000000
-        Position.X = 5.000000000000000000
-        Position.Y = 204.000000000000000000
-        Size.Width = 470.000000000000000000
-        Size.Height = 240.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'transparentlistboxstyle'
-        TabOrder = 4
-        ShowScrollBars = False
-        Columns = 2
-        DisableFocusEffect = True
-        ItemHeight = 235.000000000000000000
-        DefaultItemStyles.ItemStyle = ''
-        DefaultItemStyles.GroupHeaderStyle = ''
-        DefaultItemStyles.GroupFooterStyle = ''
-        Viewport.Width = 470.000000000000000000
-        Viewport.Height = 240.000000000000000000
-      end
-      object LblMapa2: TLabel
+      object LblMapa0: TLabel
         Align = Top
         StyledSettings = [Family]
         Margins.Left = 5.000000000000000000
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 6.000000000000000000
         Position.X = 5.000000000000000000
-        Position.Y = 507.000000000000000000
+        Position.Y = 274.000000000000000000
         Size.Width = 470.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
@@ -159,7 +137,7 @@ object FrmResultado: TFrmResultado
         TextSettings.HorzAlign = Center
         Text = 'Label2'
         Visible = False
-        TabOrder = 5
+        TabOrder = 1
       end
       object LblMapa1: TLabel
         Align = Top
@@ -168,7 +146,7 @@ object FrmResultado: TFrmResultado
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 6.000000000000000000
         Position.X = 5.000000000000000000
-        Position.Y = 507.000000000000000000
+        Position.Y = 274.000000000000000000
         Size.Width = 470.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
@@ -180,14 +158,14 @@ object FrmResultado: TFrmResultado
         Visible = False
         TabOrder = 2
       end
-      object LblMapa0: TLabel
+      object LblMapa2: TLabel
         Align = Top
         StyledSettings = [Family]
         Margins.Left = 5.000000000000000000
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 6.000000000000000000
         Position.X = 5.000000000000000000
-        Position.Y = 507.000000000000000000
+        Position.Y = 274.000000000000000000
         Size.Width = 470.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
@@ -197,7 +175,7 @@ object FrmResultado: TFrmResultado
         TextSettings.HorzAlign = Center
         Text = 'Label2'
         Visible = False
-        TabOrder = 1
+        TabOrder = 6
       end
       object LstMapas: TListBox
         Align = Top
@@ -221,57 +199,43 @@ object FrmResultado: TFrmResultado
         Viewport.Width = 470.000000000000000000
         Viewport.Height = 194.000000000000000000
       end
+      object LstTimes: TListBox
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 470.000000000000000000
+        Size.Height = 351.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 4
+        ShowScrollBars = False
+        Columns = 2
+        DisableFocusEffect = True
+        ItemHeight = 235.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 470.000000000000000000
+        Viewport.Height = 351.000000000000000000
+      end
     end
     object Layout4: TLayout
       Align = Bottom
-      Margins.Top = 20.000000000000000000
-      Margins.Bottom = 20.000000000000000000
-      Position.Y = 560.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.Y = 630.000000000000000000
       Size.Width = 480.000000000000000000
-      Size.Height = 140.000000000000000000
+      Size.Height = 80.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
-      object Layout9: TLayout
-        Align = Top
-        Size.Width = 480.000000000000000000
-        Size.Height = 60.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 6
-        object BtnCopiaSorteio: TRectangle
-          Align = Client
-          Cursor = crHandPoint
-          Fill.Color = xFF529E5A
-          Opacity = 0.800000011920929000
-          Margins.Left = 20.000000000000000000
-          Margins.Right = 20.000000000000000000
-          Size.Width = 440.000000000000000000
-          Size.Height = 60.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          XRadius = 10.000000000000000000
-          YRadius = 10.000000000000000000
-          OnClick = BtnCopiaSorteioClick
-          OnMouseEnter = BtnCopiaSorteioMouseEnter
-          OnMouseLeave = BtnCopiaSorteioMouseLeave
-          object LblCopiaSorteio: TLabel
-            Align = Client
-            StyledSettings = [Family, Style]
-            Locked = True
-            Size.Width = 440.000000000000000000
-            Size.Height = 60.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.Font.Size = 15.000000000000000000
-            TextSettings.FontColor = claWhite
-            TextSettings.HorzAlign = Center
-            Text = 'COPIAR SORTEIO'
-            TabOrder = 0
-          end
-        end
-      end
       object Layout8: TLayout
-        Align = Bottom
-        Position.Y = 80.000000000000000000
-        Size.Width = 480.000000000000000000
+        Align = Client
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 440.000000000000000000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 5
@@ -280,9 +244,7 @@ object FrmResultado: TFrmResultado
           Cursor = crHandPoint
           Fill.Color = xFFAF6D5B
           Opacity = 0.800000011920929000
-          Margins.Left = 20.000000000000000000
-          Margins.Right = 20.000000000000000000
-          Size.Width = 440.000000000000000000
+          Size.Width = 286.000000000000000000
           Size.Height = 60.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
@@ -295,13 +257,43 @@ object FrmResultado: TFrmResultado
             Align = Client
             StyledSettings = [Family, Style]
             Locked = True
-            Size.Width = 440.000000000000000000
+            Size.Width = 286.000000000000000000
             Size.Height = 60.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Size = 15.000000000000000000
             TextSettings.FontColor = claWhite
             TextSettings.HorzAlign = Center
             Text = 'SORTEAR NOVAMENTE'
+            TabOrder = 0
+          end
+        end
+        object BtnCopiaSorteio: TRectangle
+          Align = Right
+          Cursor = crHandPoint
+          Fill.Color = xFF529E5A
+          Opacity = 0.800000011920929000
+          Margins.Left = 10.000000000000000000
+          Position.X = 296.000000000000000000
+          Size.Width = 144.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = BtnCopiaSorteioClick
+          OnMouseEnter = BtnCopiaSorteioMouseEnter
+          OnMouseLeave = BtnCopiaSorteioMouseLeave
+          object LblCopiaSorteio: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Locked = True
+            Size.Width = 144.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'COPIAR SORTEIO'
             TabOrder = 0
           end
         end

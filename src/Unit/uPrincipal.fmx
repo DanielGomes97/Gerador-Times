@@ -125,6 +125,7 @@ object FrmPrincipal: TFrmPrincipal
         Size.Height = 565.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
+        ShowScrollBars = False
         Viewport.Width = 440.000000000000000000
         Viewport.Height = 565.000000000000000000
         object Layout14: TLayout

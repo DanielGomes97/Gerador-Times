@@ -23,7 +23,6 @@ type
     LblMapa2: TLabel;
     LblMapa1: TLabel;
     LblMapa0: TLabel;
-    Layout9: TLayout;
     BtnCopiaSorteio: TRectangle;
     LblCopiaSorteio: TLabel;
     Layout8: TLayout;
@@ -153,7 +152,7 @@ begin
     Item := TListBoxItem.Create(nil);
     Item.Text := '';
     Item.Width  := ListBox.Width / 2;
-    Item.Margins.Top    := 5;
+    Item.Margins.Top    := 2;
     Item.Margins.Left   := 5;
     Item.Margins.Right  := 5;
     Item.Margins.Bottom := 5;
@@ -213,7 +212,7 @@ begin
     Item := TListBoxItem.Create(nil);
     Item.Text := '';
     Item.Width  := ListBox.Width;// / 2;
-    Item.Margins.Top    := 5;
+    //Item.Margins.Top    := 5;
     Item.Margins.Left   := 5;
     Item.Margins.Right  := 5;
     Item.Margins.Bottom := 5;
