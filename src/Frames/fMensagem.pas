@@ -49,22 +49,6 @@ implementation
 
 uses VariaveisGlobais;
 
-
-//TITULO, TEXTO, ATIVO, TIPO.
-
-//SUCESSO,  [SUCESSO [OK]                           //GREEN
-//CONFIRMAÇÃO [TEM CERTEZA? [CONFIRMAR, CANCELAR],  //BLUE
-//INFORMATIVO [ESSE REGISTRO NÃO ESTÁ VALIDO [CONFIRMAR],  //BLUE
-//FALHA [ESSE REGISTRO NÃO ESTÁ VALIDO [OK],  //RED
-//ATENÇÃO [TEM CERTEZA? [SIM, NÃO],                 //RED
-//FALHA
-{
-xMsgSUCESSO    : String = 'SUCESSO';
-xMsgCONFIRMAÇÃO: String = 'CONFIRMAÇÃO';
-xMsgINFORMATIVA: String = 'INFORMATIVA';
-xMsgERRO: String = 'ERRO';
-xMsgATENÇÃO: String = 'ATENÇÃO';  }
-
 procedure TFrameMensagem.BtnCancelarClick(Sender: TObject);
 begin
     if BtnCancelar.Tag = 0 then
@@ -114,9 +98,7 @@ end;
 procedure TFrameMensagem.MudarCor(CorFundo, CorTexto: TAlphaColor);
 begin
     RFundoMensagem.Fill.Color := CorFundo;//cor fundo
-    //cor texto
-    LblTextoMensagem.TextSettings.FontColor := CorTexto;
-    //Label1.TextSettings.FontColor := CorTexto;
+    LblTextoMensagem.TextSettings.FontColor := CorTexto; //cor texto
 end;
 
 procedure TFrameMensagem.MostraMensagem(TipoJanela, Texto: String; MostraMsg: Boolean = true);
@@ -126,18 +108,14 @@ begin
       exit;
 
     Layout1.Width := Width - 80;
-    //if UsingModeDARK then
-      MudarCor(FundoDARK, TextoDARK); //escuro
-    //else
-    //   MudarCor(FundoLIGHT, TextoLIGHT);//claro
+    MudarCor(FundoDARK, TextoDARK); //escuro
 
     LblTituloMensagem.Text := 'Mensagem do sistema';
     LblTextoMensagem.Text  := Texto;
     PainelMensagemPadrao;
     EsconderImagens;
 
-    //OK
-    if (TipoJanela = xMsgTipoSUCESSO) or (TipoJanela = xMsgTipoINFORMATIVA) or (TipoJanela = xMsgTipoERRO) then
+    if (TipoJanela = xMsgTipoSUCESSO) or (TipoJanela = xMsgTipoINFORMATIVA) or (TipoJanela = xMsgTipoERRO) then//OK
     begin
         if TipoJanela = xMsgTipoSUCESSO     then
            ImgSucesso.Visible := True;
@@ -148,8 +126,7 @@ begin
         BtnConfirmar.Align := TAlignLayout.Client;
     end;
 
-    //CONFIRMAR/ CANCELAR
-    if TipoJanela = xMsgTipoCONFIRMAÇÃO then
+    if TipoJanela = xMsgTipoCONFIRMAÇÃO then //CONFIRMAR/ CANCELAR
        ImgConfirmacao.Visible := True;
 end;
 

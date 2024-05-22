@@ -125,10 +125,8 @@ begin
     Mensagem.SetFocus;
 
     // Exibe os controles...
-    //Fundo.AnimateFloat ('Opacity', 0.7);
     TAnimator.AnimateFloat(Fundo, 'Opacity', 0.7);
     TAnimator.AnimateFloat(Layout, 'Opacity', 1);
-    //Layout.AnimateFloat('Opacity', 1);
     Layout.BringToFront;
 
     // Esconde o teclado virtual...

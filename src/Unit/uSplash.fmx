@@ -12148,7 +12148,7 @@ object FrmSplash: TFrmSplash
         Size.PlatformDefault = False
         TextSettings.FontColor = xFF333333
         TextSettings.HorzAlign = Center
-        Text = '@2024 - Gerador de Equipes | Vers'#227'o: 1.0'
+        Text = '@2024 - Gerador de Equipes | Vers'#227'o: 1.0.0'
         TabOrder = 0
       end
     end

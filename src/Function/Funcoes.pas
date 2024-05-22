@@ -118,8 +118,8 @@ var
   TextoInicio, TextoFim: String;
 begin
     Result := '';
-    TextoInicio := '● Sala de Espera [Aguarde Aqui] ⏳🎮</li><ul>';
-    TextoFim    := '● Afk';
+    TextoInicio := NomeSalaInicio;
+    TextoFim    := NomeSalaFinal;
 
     startPos := Pos(TextoInicio, html);   // Encontre a posição inicial do texto desejado
     if startPos > 0 then

@@ -77,7 +77,6 @@ type
     procedure FrameMensagem1BtnConfirmarClick(Sender: TObject);
 
   private
-
     { Private declarations }
   public
     { Public declarations }

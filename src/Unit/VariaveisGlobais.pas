@@ -1,4 +1,4 @@
-unit VariaveisGlobais;
+﻿unit VariaveisGlobais;
 
 interface
 
@@ -6,22 +6,29 @@ uses
    System.UITypes, FireDAC.Comp.Client, FMX.Controls, System.Classes;
 
 var
-
+  //todas informações buscando no endereço... mode viewer.
   URLServerTS3: String = 'https://centerteamspeak.com/central/modules/servers/teamspeak3/viewer.php?sid=16968';
+
   PlayerAtivo: String  = '<img src="https://centerteamspeak.com/central/modules/servers/teamspeak3/img/16x16_player_on.png">';  //se for detectado ATIVO
   PlayerMutado: String = '<img src="https://centerteamspeak.com/central/modules/servers/teamspeak3/img/16x16_hardware_output_muted.png">'; //se for detectado MUTADO;
+  //
   InicioTag: String    = '<li><img src="https://centerteamspeak.com/central/modules/servers/teamspeak3/img/16x16_hardware_output_muted.png">';
   FimConteudo: String  = '</ul><li><img src="https://centerteamspeak.com/central/modules/servers/teamspeak3/img/16x16_channel_green.png">';
+  //
+  NomeSalaInicio: String = '● Sala de Espera [Aguarde Aqui] ⏳🎮</li><ul>';
+  NomeSalaFinal : String = '● Afk';
+
   CopySorteio: TStringList;
 
   HeightLstTIMES  : Single = 0;
   HeightFormulario: Integer;//
   HeightInicial   : Boolean = True;
+  AguardarTempo   : Boolean = False;
 
 
   //******* TIPO MENSAGEM *******
   xMsgTipoSUCESSO    :  String = 'SUCESSO';
-  xMsgTipoCONFIRMA��O:  String = 'CONFIRMA��O';
+  xMsgTipoCONFIRMAÇÃO:  String = 'CONFIRMAÇÃO';
   xMsgTipoINFORMATIVA:  String = 'INFORMATIVA';
   xMsgTipoERRO       :  String = 'ERRO';
 

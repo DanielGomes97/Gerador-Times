@@ -208,18 +208,17 @@ var
   Frame: TFrameMapas;
   I, X, Y: Integer;
 begin
-    //item vazio na listbox...
-    Item := TListBoxItem.Create(nil);
+
+    Item := TListBoxItem.Create(nil); //item vazio na listbox...
     Item.Text := '';
-    Item.Width  := ListBox.Width;// / 2;
-    //Item.Margins.Top    := 5;
+    Item.Width  := ListBox.Width;
     Item.Margins.Left   := 5;
     Item.Margins.Right  := 5;
     Item.Margins.Bottom := 5;
     Item.Selectable     := false;
 
-    //criar o frame...
-    Frame := TFrameMapas.Create(Item);
+
+    Frame := TFrameMapas.Create(Item); //criar o frame...
     Frame.Parent := Item;
     Frame.Align := TAlignLayout.Client;
 
@@ -245,7 +244,6 @@ begin
                end;
         end;
     end;
-
     ListBox.ItemHeight := 190;//Tamanho;
     ListBox.AddObject(Item);
 end;

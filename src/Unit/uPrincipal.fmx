@@ -295,8 +295,8 @@ object FrmPrincipal: TFrmPrincipal
             StyleLookup = 'MemoNomesStyle1'
             TabOrder = 0
             OnKeyUp = MemoNomesKeyUp
-            Viewport.Width = 440.000000000000000000
-            Viewport.Height = 223.000000000000000000
+            Viewport.Width = 436.000000000000000000
+            Viewport.Height = 219.000000000000000000
           end
           object Layout19: TLayout
             Align = Top
